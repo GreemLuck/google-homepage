@@ -1,7 +1,11 @@
+a:hover{
+    text-decoration-line: underline;
+}
+
 .center{
     display: block;
     text-align: center;
-    padding: 20% 0 0 0;
+    padding: 10% 0 0 0;
 }
 
 .center img{
@@ -9,25 +13,51 @@
 }
 
 input{
-    width: 50%;
+    width: 500px;
     padding: 12px;
     border: none;
     box-shadow: 0 1px 3px 1px rgb(125,125,125,0.45);
 }
 
+.searchButtons{
+    display: block;
+}
+
+.searchButtons input {
+    display: inline-block;
+    height: 36px;
+    width: 125px;
+    margin: 20px 5px;
+    padding: 0 5px 0 0;
+}
+
+.center p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center p a{
+    color: #1a0dab;
+    padding: 0 3px;
+}
+.center p a:hover{
+    text-decoration-line: underline;    
+}
+/*Navbar*/
+
 ul{
     list-style-type: none;
     margin: 0;
+    padding-inline-start: 0;
 }
 
-li{
+.navbar li{
     float: right;
     width: 60px;
     height: 50px;
     text-align: center;
 }
 
-li a{
+.navbar li a{
     text-decoration: none;
     user-select: none;
     color: black;
@@ -38,13 +68,47 @@ li a{
     line-height: 50px;
 }
 
-li a img{
+.navbar li a img{
     width: 75%;
     margin-left: auto;
     margin-right: auto;
 }
 
-a:hover{
+.navbar a:hover{
     color: gray;
     text-decoration-line: underline;
+}
+
+/*Footer*/
+
+.footer{
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    bottom: 0;
+    color: rgb(90,90,90);
+    background-color: rgb(230,230,230);
+    width: 100%;
+    padding: 5px 12px;
+    margin: 0 auto;
+}
+
+.footer li{
+    padding: 10px 10px;
+}
+
+.footer .left li{
+    float: left;
+}
+
+.footer .right li{
+    float: right;
+}
+
+.footer ul{
+    margin-right: 20px;
+}
+
+.footer p{
+    padding: 0 10px;
+    margin: 10px 0;
 }
